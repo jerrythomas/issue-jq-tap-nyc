@@ -3,10 +3,16 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+     "cover": "nyc tap --no-coverage jq.spec.js",
+     "test": "tap --no-coverage jq.spec.js",
+     "start": "node index.js"
+  },
   "dependencies": {
     "node-jq": "^1.11.0"
   },
   "devDependencies": {
+    "nyc": "^15.0.1",
     "tap": "^14.10.7"
   }
 }
